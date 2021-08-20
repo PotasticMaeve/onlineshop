@@ -32,7 +32,7 @@ function Header() {
           </div>
         </div>
         <div className="cart">
-          <FaShoppingCart color={"#6C727C"} />
+          <FaShoppingCart color={"#6C727C"} size={18} />
         </div>
         <div className="separator"></div>
         <div className="authentication">
