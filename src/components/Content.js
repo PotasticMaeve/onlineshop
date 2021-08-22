@@ -1,5 +1,8 @@
 import React from "react";
 import Slide from "./Slide";
+import Category from "./Category";
+import Product from "./Product";
+import CustomCategory from "./CustomCategory";
 
 const Content = () => {
   return (
@@ -7,99 +10,11 @@ const Content = () => {
       <div className="banner">
         <Slide />
       </div>
-      <div className="category-wrap">
-        <h1>Kategori Pilihan</h1>
-        <div className="list">
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-          <div className="category-item"></div>
-        </div>
-      </div>
+      <Category />
       <hr />
-      <div className="product-wrap">
-        <div className="row">
-          <h1>Produk Terlaris</h1>
-          <h1 className="seeall">Lihat Semua</h1>
-        </div>
-
-        <div className="list">
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="product-wrap">
-        <div className="row">
-          <h1>Elektronik Dibawah 1 Juta</h1>
-          <h1 className="seeall">Lihat Semua</h1>
-        </div>
-        <div className="list">
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-          <div className="product-item">
-            <div className="product-photo"></div>
-            <div className="product-desc"></div>
-          </div>
-        </div>
-      </div>
+      <Product />
       <hr className="big-separate" />
-      <div className="sticky-custom-category">
-        <div className="custom-category-wrap">
-          <div className="custom-category"></div>
-          <div className="custom-category"></div>
-          <div className="custom-category"></div>
-          <div className="custom-category"></div>
-          <div className="custom-category"></div>
-          <div className="custom-category"></div>
-        </div>
-      </div>
+      <CustomCategory />
       <div className="clearfix"></div>
     </div>
   );

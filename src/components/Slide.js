@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Banner from "../images/banner.png";
 
-const colors = ["#FFADAD", "#0088FE", "#00C49F", "#FFBB28"];
+const colors = ["#FFADAD", "#A0C4FF", "#94D2BD", "#E76F51"];
 const Slide = () => {
   const [index, setIndex] = useState(0);
   const delay = 5000;
@@ -22,7 +23,13 @@ const Slide = () => {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {colors.map((backgroundColor, idx) => (
-          <div key={idx} className="slide" style={{ backgroundColor }}></div>
+          <div key={idx} className="slide" style={{ backgroundColor }}>
+            <img
+              src={Banner}
+              alt="Banner"
+              style={{ width: "930px", height: "400px", margin: "-4rem 1px" }}
+            />
+          </div>
         ))}
       </div>
       <div className="slide-dots">
